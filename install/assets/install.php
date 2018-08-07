@@ -27,6 +27,7 @@ $vars = array(
   'smtp_tls_certs'  => getenv("SMTP_TLS_CERTS")       ?: '/etc/ssl/certs/ca-certificates.crt',
   'smtp_user'       => getenv("SMTP_USER"),
   'smtp_pass'       => getenv("SMTP_PASS"),
+  'smtp_auth'       => getenv("SMTP_AUTH")            ?: 'on',
 
   'siri'     => getenv("INSTALL_SECRET"),
   'config'   => getenv("INSTALL_CONFIG") ?: '/www/osticket/upload/include/ost-sampleconfig.php'
